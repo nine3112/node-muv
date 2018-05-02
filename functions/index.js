@@ -8,7 +8,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 // const https = require('https');
-// const url = require('url');
+const url = require('url');
 const port = 5000;
 
 // var bodyParser = require('body-parser')
@@ -73,7 +73,7 @@ app.post('/newuser', function (req, res) {
 });
 
 app.listen(port, function () {
-    console.log('Starting node.js on port ' + port);
+    console.log('Starting node.js '+url+' on port ' + port);
 });
 
 exports.app = functions.https.onRequest(app);
