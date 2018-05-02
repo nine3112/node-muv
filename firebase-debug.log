@@ -1,0 +1,63 @@
+[debug] [2018-05-02T17:17:53.844Z] ----------------------------------------------------------------------
+[debug] [2018-05-02T17:17:53.847Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\GabaRose\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only functions,hosting
+[debug] [2018-05-02T17:17:53.847Z] CLI Version:   3.18.4
+[debug] [2018-05-02T17:17:53.847Z] Platform:      win32
+[debug] [2018-05-02T17:17:53.847Z] Node Version:  v8.10.0
+[debug] [2018-05-02T17:17:53.847Z] Time:          Thu May 03 2018 00:17:53 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-05-02T17:17:53.847Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-02T17:17:53.856Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-02T17:17:53.856Z] > authorizing via signed-in user
+[debug] [2018-05-02T17:17:53.858Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/node-mediumviewer  
+  
+ Thu May 03 2018 00:17:53 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-05-02T17:17:55.371Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-02T17:17:55.372Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/node-mediumviewer/tokens  
+  
+ Thu May 03 2018 00:17:55 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-05-02T17:18:01.097Z] <<< HTTP RESPONSE 500
+[debug] [2018-05-02T17:18:01.097Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, An unknown error occurred. Please contact support.
+[debug] [2018-05-02T17:18:01.103Z] Error Context: {
+  "body": {
+    "error": {
+      "code": "UNKNOWN_ERROR",
+      "message": "An unknown error occurred. Please contact support."
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": "UNKNOWN_ERROR",
+        "message": "An unknown error occurred. Please contact support."
+      }
+    },
+    "headers": {
+      "server": "nginx",
+      "date": "Wed, 02 May 2018 17:18:02 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "97",
+      "connection": "close",
+      "x-content-type-options": "nosniff"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "admin.firebase.com",
+        "port": 443,
+        "hostname": "admin.firebase.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1/database/node-mediumviewer/tokens",
+        "path": "/v1/database/node-mediumviewer/tokens",
+        "href": "https://admin.firebase.com/v1/database/node-mediumviewer/tokens"
+      },
+      "method": "GET"
+    }
+  }
+}
